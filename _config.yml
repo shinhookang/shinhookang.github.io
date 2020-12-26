@@ -80,15 +80,14 @@ analytics:
 
 # Site Author
 author:
-    name             : "Shinhoo Kang"
+  name             : "Shinhoo Kang"
   avatar           : "profile.png"
-  bio              : #"Your biography for the left-hand sidebar"
+  bio              : "Postdoctoral Appointee at Argonne National Laboratory"
   location         : "9700 S Cass Ave, Lemont, IL 60439"
   employer         :
-#   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=I9YeTewAAAAJ&hl=ko&oi=sra"
-  email            :
-  researchgate     :  "https://www.researchgate.net/profile/Shinhoo_Kang2"
+  email            : "shinhoo.kang@anl.gov"
+  researchgate     : "https://www.researchgate.net/profile/Shinhoo_Kang2"
   uri              :
   bitbucket        :
   codepen          :
