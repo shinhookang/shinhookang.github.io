@@ -23,7 +23,7 @@ develop stable time stepping schemes for coupling multiphysics systems, e.g., at
   
 
 ## Exponential DG
-
+ 
 We propose an Exponential DG approach for numerically solving partial differential equations (PDEs). The idea is to decompose the governing PDE operators into linear (fast dynamics extracted by linearization) and nonlinear (the remaining after removing the former) parts, on which we apply the discontinuous Galerkin (DG) spatial discretization. The resulting semi-discrete system is then integrated using exponential time-integrators: exact for the former and approximate for the latter. 
 
 By construction, our approach is stable with a large Courant number (Cr > 1); supports high-order solutions both in time and space; is computationally favorable compared to IMEX DG methods with no preconditioner; and requires comparable computational time compared to explicit RKDG methods.
@@ -38,6 +38,8 @@ The following plot shows good strong scalability up to 41664 cores (the maximum 
 <p float="left">
 <img src="../files/expo_strongscalability.png" width="850" />
 </p>
+
+- [A scalable exponential-DG approach for nonlinear conservation laws: with application to Burger and Euler equations](https://arxiv.org/abs/2011.01316)
 
 
 ## Hybridized DG methods for a Linear Degenerate Elliptic Equations
@@ -66,7 +68,7 @@ with the rate of $k + \frac{3}{2}$.
 <img src="../files/de_smooth_conv.png" width="850" />
 </p>
 
-
+- [A hybridized discontinuous Galerkin method for a linear degenerate elliptic equation arising from two-phase mixtures](https://doi.org/10.1016/j.cma.2019.03.018)
 
 ## A Coupled Implicit HDG and Explicit DG methods for Shallow Water Systems
 
@@ -105,7 +107,7 @@ The vorticity field computed from ARS2 HDG-DG is comparable to the [work](https:
 <img src="../files/imex_sswe.png" width="850" />
 </p>
 
-
+- [IMEX HDG-DG: A coupled implicit hybridized discontinuous Galerkin and explicit discontinuous Galerkin approach for shallow water systems](https://doi.org/10.1016/j.jcp.2019.109010)
 
 ## Temperature and Moisture Retrievals from Hyperspectral Measurements
 
@@ -127,3 +129,5 @@ The reduced (a) RMS errors and (b) bias profiles between the radiosondes are obs
 <p float="left">
 <img src="../files/aeri_temperature.png" width="850" />
 </p>
+
+- [Improvement of AERI T/q retrievals and their validation at Anmyeon-do, South Korea](https://doi.org/10.1175/jtech-d-12-00029.1)
