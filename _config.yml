@@ -11,7 +11,8 @@ title                    : "Home"
 title_separator          : "-"
 name                     : &name "Shinhoo Kang"
 description              : &description "Postdoctoral Appointee at Argonne National Laboratory"
-url                      : https://shinhookang.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+# url                      : https://shinhookang.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : http://localhost:4000 # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "shinhookang.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -81,7 +82,7 @@ analytics:
 # Site Author
 author:
   name             : "Shinhoo Kang"
-  avatar           : "KangANL2.jpg"
+  avatar           : "KangTrip.jpg"
   bio              : "Postdoctoral Appointee at <a href=https://www.anl.gov/mcs> Argonne National Laboratory </a>"
   location         : "9700 S Cass Ave,<br>&emsp;&nbsp;&nbsp; Lemont,<br>&emsp;&nbsp;&nbsp; IL 60439"
   employer         :
