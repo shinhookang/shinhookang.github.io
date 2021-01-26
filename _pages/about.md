@@ -16,6 +16,8 @@ I focus on computational mechanics, in particular, high-order numerical methods 
 
 ## Recent news:
 
+* January 2021: [Mass-Conserving Implicit-Explicit Methods for Coupled Compressible Navier-Stokes Equations](https://arxiv.org/abs/2101.09263) is submitted. 
+
 * November 2020: [A scalable exponential-DG approach for nonlinear conservation laws: with application to Burger and Euler equations](https://arxiv.org/abs/2011.01316) is submitted. 
 
  
