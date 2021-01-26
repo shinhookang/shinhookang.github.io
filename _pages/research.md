@@ -16,11 +16,34 @@ develop stable time stepping schemes for coupling multiphysics systems, e.g., at
 
 # Research Highlights
 
+- [Mass-Conserving IMEX Coupling](#mass-conserving-IMEX-coupling)
 - [Scalable Time Integrators](#exponential-dg)
 - [High-order Spatial Discretizations](#hybridized-dg-methods-for-a-linear-degenerate-elliptic-equations)
 - [Geophysical Flows](#a-coupled-implicit-hdg-and-explicit-dg-methods-for-shallow-water-systems)
 - [Remote Sensing](#temperature-and-moisture-retrievals-from-hyperspectral-measurements)
   
+## Mass Conserving IMEX Coupling
+
+Earth system models are composed of coupled components that separately model systems such as the global atmosphere, ocean, and land surface. While these components are well developed, coupling them in a single system can be a significant challenge. Computational efficiency, accuracy, and stability are principal concerns. In this study we focus on these issues. In particular, implicit-explicit (IMEX) tight and loose coupling strategies are explored for handling different time scales. For a simplified model for the air-sea interaction problem, we consider coupled compressible Navier–Stokes equations with an interface condition. Under the rigid-lid assumption, horizontal momentum and heat flux are exchanged through the interface.
+
+IMEX coupling methods solve one domain explicitly and the other implicitly. To enhance computation efficiency, we adapt IMEX time integrators, which can handle scale-separable stiffness or geometrically induced stiffness, as an implicit solver. Furthermore, we employ a horizontally explicit and vertically implicit (HEVI) approach where solutions are obtained column by column; hence, the resulting linear system is significantly reduced compared with two-dimensional IMEX methods.
+
+We conduct the simulation with the IMEX method. The evolution of temperature fields is shown for $t \in [0,500]$. 
+Kelvin-Helmholtz waves are well developed at $t=100$ and start to diffuse while mixing fluids. 
+Meanwhile, because of the heat and horizontal momentum exchange, fluid on the bottom domain cools near the interface and moves along the outside of vortex as time passes.
+
+<p float="left">
+<img src="../files/khi_imex_coupling.jpg" width="850" />
+</p>
+
+
+Total mass is conserved with IMEX coupling methods regardless of tight or loose coupling methods. The total mass losses for IMEX tight and loose coupling methods are within $\mathcal{O}(10^{−13})$. This result makes sense because we do not exchange the mass across the interface but adjust the wall temperature in the interface. This rigid-lid condition blocks the vertical motion of the interface: no mass flux is allowed, and hence the total mass is conserved. As for the total energy loss, a peak is observed near $t=100$ (when strong KHI is observed above), and then the total energy loss decreases as time passes.
+
+<p float="left">
+<img src="../files/massloss_imex_coupling.jpg" width="850" />
+</p>
+
+- [Mass-Conserving Implicit-Explicit Methods for Coupled Compressible Navier-Stokes Equations](https://arxiv.org/abs/2101.09263)
 
 ## Exponential DG
  
