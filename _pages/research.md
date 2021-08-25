@@ -31,14 +31,11 @@ In particular, we focus on relaxation IMEX-RK methods on a uniform mesh to tackl
 
 We have also studied the multirate method on a nonuniform mesh to handle geometric-induced stiffness arising from mesh refinements. Unlike IMEX-RK methods, multirate methods do not require any linear/nonlinear solve and, hence, are attractive for parallel computing if proper preconditioning is not available. Multirate methods decompose the original problem into subproblems, where different time step sizes can be used locally on each subproblem. We have numerically demonstrated that the Relaxation-MRK2 method has a second-order rate of convergence and shows the total entropy-conserving/stable behavior if entropy-conserving/stable spatial discretization is provided.
 
-<div class="row">
-  <div class="column">
-    <img src="../files/burgers_energyloss_ec_ark.jpg" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="../files/burgers_energyloss_ec_mrk.jpg" style="width:100%">
-  </div>
-</div>
+<p float="left">
+<img src="../files/burgers_energyloss_ec_ark.jpg" width="400" />
+<img src="../files/burgers_energyloss_ec_mrk.jpg" width="400" />
+</p>
+
 
 ## Mass Conserving IMEX Coupling
 
