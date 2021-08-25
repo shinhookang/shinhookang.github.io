@@ -8,7 +8,7 @@ author_profile: true
 My research primarily focuses on numerical methods for partial differential equations.
 This includes high-order spatial and temporal discretization methods
 such as (hybridized) discontinuous Galerkin (DG), 
-finite volume (FV), exponential integrators and implicit-explicit (IMEX) methods. 
+finite volume (FV), exponential integrators, multirate methods, and implicit-explicit (IMEX) methods. 
 Developing scalable numerical algorithms for modern computer architectures is also of interest.
 Recent work is to 
 develop stable time stepping schemes for coupling multiphysics systems, e.g., atmosphere and ocean.
@@ -16,12 +16,30 @@ develop stable time stepping schemes for coupling multiphysics systems, e.g., at
 
 # Research Highlights
 
+- [Entropy-Conserving/Stable Partitioned Runge-Kutta](#entropy-stable-IMEX)
 - [Mass-Conserving IMEX Coupling](#mass-conserving-IMEX-coupling)
 - [Scalable Time Integrators](#exponential-dg)
 - [High-order Spatial Discretizations](#hybridized-dg-methods-for-a-linear-degenerate-elliptic-equations)
 - [Geophysical Flows](#a-coupled-implicit-hdg-and-explicit-dg-methods-for-shallow-water-systems)
 - [Remote Sensing](#temperature-and-moisture-retrievals-from-hyperspectral-measurements)
-  
+
+## Entropy Conserving/Stable IMEX and Multirate Methods
+
+we present entropy-stable time discretization methods by using a relaxation method for partitioned Runge-Kutta schemes. In particular we apply relaxation to IMEX-RK methods to solve stiff problems and to a class of explicit second-order multirate methods with grid-induced stiffness. The relaxation methods successfully extend to both the IMEX-RK and multirate methods for targeting stiff problems in combination with an entropy-conserving/stable spatial discretization. 
+
+In particular, we focus on relaxation IMEX-RK methods on a uniform mesh to tackle scaleseparable stiffness. This is achieved by defining the linearized flux containing the fast wave in the system with the stiffness being implicitly treated, thus allowing for a longer time step size than that restricted by explicit methods. In addition, relaxation IMEX-RK methods not only support high-order accuracy in time but also have entropy-conserving/stable properties if entropy-conserving/stable fluxes are equipped with them.
+
+We have also studied the multirate method on a nonuniform mesh to handle geometric-induced stiffness arising from mesh refinements. Unlike IMEX-RK methods, multirate methods do not require any linear/nonlinear solve and, hence, are attractive for parallel computing if proper preconditioning is not available. Multirate methods decompose the original problem into subproblems, where different time step sizes can be used locally on each subproblem. We have numerically demonstrated that the Relaxation-MRK2 method has a second-order rate of convergence and shows the total entropy-conserving/stable behavior if entropy-conserving/stable spatial discretization is provided.
+
+<div class="row">
+  <div class="column">
+    <img src="../files/burgers_energyloss_ec_ark.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="../files/burgers_energyloss_ec_mrk.jpg" style="width:100%">
+  </div>
+</div>
+
 ## Mass Conserving IMEX Coupling
 
 Earth system models are composed of coupled components that separately model systems such as the global atmosphere, ocean, and land surface. While these components are well developed, coupling them in a single system can be a significant challenge. Computational efficiency, accuracy, and stability are principal concerns. In this study we focus on these issues. In particular, implicit-explicit (IMEX) tight and loose coupling strategies are explored for handling different time scales. For a simplified model for the air-sea interaction problem, we consider coupled compressible Navier–Stokes equations with an interface condition. Under the rigid-lid assumption, horizontal momentum and heat flux are exchanged through the interface.
@@ -43,7 +61,9 @@ Total mass is conserved with IMEX coupling methods regardless of tight or loose 
 <img src="../files/massloss_imex_coupling.jpg" width="850" />
 </p>
 
-- [Mass-Conserving Implicit-Explicit Methods for Coupled Compressible Navier-Stokes Equations](https://arxiv.org/abs/2101.09263)
+<!-- - [Mass-Conserving Implicit-Explicit Methods for Coupled Compressible Navier-Stokes Equations](https://arxiv.org/abs/2101.09263) -->
+- [Mass-Conserving Implicit-Explicit Methods for Coupled Compressible Navier-Stokes Equations](https://doi.org/10.1016/j.cma.2021.113988)
+
 
 ## Exponential DG
  
@@ -62,7 +82,8 @@ The following plot shows good strong scalability up to 41664 cores (the maximum 
 <img src="../files/expo_strongscalability.png" width="850" />
 </p>
 
-- [A scalable exponential-DG approach for nonlinear conservation laws: with application to Burger and Euler equations](https://arxiv.org/abs/2011.01316)
+<!-- - [A scalable exponential-DG approach for nonlinear conservation laws: with application to Burger and Euler equations](https://arxiv.org/abs/2011.01316) -->
+- [A scalable exponential-DG approach for nonlinear conservation laws: with application to Burger and Euler equations](https://doi.org/10.1016/j.cma.2021.114031)
 
 
 ## Hybridized DG methods for a Linear Degenerate Elliptic Equations
