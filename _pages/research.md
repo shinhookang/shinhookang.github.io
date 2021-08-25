@@ -36,6 +36,8 @@ We have also studied the multirate method on a nonuniform mesh to handle geometr
 <img src="../files/burgers_energyloss_ec_mrk.png" width="400" />
 </p>
 
+- [Entropy-Preserving and Entropy-Stable Relaxation IMEX and Multirate Time-Stepping Methods](https://arxiv.org/pdf/2108.08908.pdf)
+
 
 ## Mass Conserving IMEX Coupling
 
