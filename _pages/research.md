@@ -16,15 +16,15 @@ develop stable time stepping schemes for coupling multiphysics systems, e.g., at
 
 # Research Highlights
 
-- [Entropy-Conserving/Stable Partitioned Runge-Kutta](#entropy-stable-IMEX)
-- [Mass-Conserving IMEX Coupling](#mass-conserving-IMEX-coupling)
+- [Entropy-Conserving/Stable Partitioned Runge-Kutta Methods](#entropy-stable-imex-and-multirate-methods)
+- [Mass-Conserving IMEX Coupling](#mass-conserving-imex-coupling)
 - [Scalable Time Integrators](#exponential-dg)
 - [High-order Spatial Discretizations](#hybridized-dg-methods-for-a-linear-degenerate-elliptic-equations)
 - [Geophysical Flows](#a-coupled-implicit-hdg-and-explicit-dg-methods-for-shallow-water-systems)
 - [Remote Sensing](#temperature-and-moisture-retrievals-from-hyperspectral-measurements)
 
-## Entropy Conserving/Stable IMEX and Multirate Methods
-
+## Entropy Stable IMEX and Multirate Methods
+ 
 we present entropy-stable time discretization methods by using a relaxation method for partitioned Runge-Kutta schemes. In particular we apply relaxation to IMEX-RK methods to solve stiff problems and to a class of explicit second-order multirate methods with grid-induced stiffness. The relaxation methods successfully extend to both the IMEX-RK and multirate methods for targeting stiff problems in combination with an entropy-conserving/stable spatial discretization. 
 
 In particular, we focus on relaxation IMEX-RK methods on a uniform mesh to tackle scaleseparable stiffness. This is achieved by defining the linearized flux containing the fast wave in the system with the stiffness being implicitly treated, thus allowing for a longer time step size than that restricted by explicit methods. In addition, relaxation IMEX-RK methods not only support high-order accuracy in time but also have entropy-conserving/stable properties if entropy-conserving/stable fluxes are equipped with them.
