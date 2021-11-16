@@ -4,15 +4,20 @@ title: "Research"
 permalink: /research/
 author_profile: true
 ---
-  
-My research primarily focuses on numerical methods for partial differential equations.
+
+My research is primarily concerned with computational mechanics with a focus on geophysical flows. 
+I am interested in developing stable and efficient numerical algorithms that are suitable for multi-physics and multiscale problems such as Earth System Models. To tackle such problems, high-ordermethods, operator splittings methods, coupling methods, scalable solvers are of interest. 
+Nowadays,I am also interested in designing next-generation machine-learning methods and algorithms thatare more stable and interpretable for geophysical flows.
+<!-- I enjoy working with engineers, computerscientists, mathematicians and others. Interacting with them allows me to see my problems fromdifferent perspectives, which inspire new ideas, overcome difficulties that arise in research, and improve the quality of my research work. -->
+
+<!-- My research primarily focuses on numerical methods for partial differential equations.
 This includes high-order spatial and temporal discretization methods
 such as (hybridized) discontinuous Galerkin (DG), 
 finite volume (FV), exponential integrators, multirate methods, and implicit-explicit (IMEX) methods. 
 Developing scalable numerical algorithms for modern computer architectures is also of interest.
 Recent work is to 
 develop stable time stepping schemes for coupling multiphysics systems, e.g., atmosphere and ocean.
-
+ -->
 
 # Research Highlights
 
