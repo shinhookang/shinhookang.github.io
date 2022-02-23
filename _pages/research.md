@@ -51,12 +51,16 @@ We also studied the parallel performance of the MPRK2 method using three-dimensi
 Thanks to its explicit nature, the MPRK2 coupling method shows favorable strong and weak scaling results for the thermal convection example. 
  
 <p float="left">
-<img src="../files/tb_scaling_strong_wc.jpg" width="300" />
-<img src="../files/tb_scaling_weak_wc.jpg" width="300" />
+<img src="../files/tb_scaling_strong_wc.jpg" width="850" />
+<img src="../files/tb_scaling_weak_wc.jpg" width="830" />
 </p>
 
 <p float="left">
-<img src="../files/tb_mr_coupling.mp4" alt="thermal convection" />
+<img src="../files/tb_mr_coupling.gif" width="800" />
+<!-- <img src="../files/tb_mr_coupling.gif" width="800" height="40" /> -->
+<!-- <img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="40" height="40" /> -->
+<!-- <img src="../files/tb_mr_coupling.mp4" alt="thermal convection" /> -->
+<!-- ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif) -->
 </p>
 
 <!-- - [Multirate Partitioned Runge-Kutta Methods for Coupled Navier--Stokes Equations](https://arxiv.org/pdf/2108.08908.pdf) -->
