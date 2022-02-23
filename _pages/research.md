@@ -39,7 +39,7 @@ We develop a theoretical performance model for both serial and parallel instance
 The usefulness of using multirate methods for solving coupled compressible Navier-Stokes equations (CNS) has been demonstrated through several numerical studies. 
 
 We perform the simulation with the MPRK2 ($m=4$) method.
-The evolution of temperature fields is shown for $t\in\LRs{0,2000}$. 
+The evolution of temperature fields is shown for $t\in\{0,2000\}$. 
 The cold fluid parcel in the atmosphere drops down to the interface while the warm fluid in the ocean rises. The cold and warm perturbations horizontally move balancing heat and momentum fluxes across the interface, and hit the walls. 
 The cooled fluid on the ocean surface begins to sink and create circulations. 
 
@@ -51,8 +51,8 @@ We also studied the parallel performance of the MPRK2 method using three-dimensi
 Thanks to its explicit nature, the MPRK2 coupling method shows favorable strong and weak scaling results for the thermal convection example. 
  
 <p float="left">
-<img src="../files/tb_scaling_strong_wc.jpg" width="400" />
-<img src="../files/tb_scaling_weak_wc.jpg" width="400" />
+<img src="../files/tb_scaling_strong_wc.jpg" width="300" />
+<img src="../files/tb_scaling_weak_wc.jpg" width="300" />
 </p>
 
 <p float="left">
