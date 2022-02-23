@@ -31,7 +31,7 @@ develop stable time stepping schemes for coupling multiphysics systems, e.g., at
 
 ## Multirate Coupling Methods
  
-we propose to apply multirate partitioned Runge-Kutta (MPRK) coupling methods \cite{constantinescu2007multirate} for fluid-fluid interaction problems. 
+we propose to apply multirate partitioned Runge-Kutta (MPRK) coupling methods for fluid-fluid interaction problems. 
 We propose using multirate partitioned Runge-Kutta (MPRK) coupling methods for fluid-fluid interaction problems. 
 A buffer region is employed at the interface to ensure a smooth transition, which is essential for conservation and convergence. 
 Our solution adds only a little amount of complexity to a singlerate implementation while providing the complete computational benefit of a multirate method. 
@@ -48,12 +48,14 @@ The cooled fluid on the ocean surface begins to sink and create circulations.
 </p>
 
 We also studied the parallel performance of the MPRK2 method using three-dimensional coupled compressible Navier-Stokes equations. 
-Thanks to its explicit nature, the MPRK2 coupling method shows favorable strong and weak scaling results for the thermal convection example. 
+Thanks to its explicit nature, the MPRK2 coupling method shows favorable strong and weak scaling results 
  
 <p float="left">
 <img src="../files/tb_scaling_strong_wc.jpg" width="850" />
 <img src="../files/tb_scaling_weak_wc.jpg" width="830" />
 </p>
+
+for the thermal convection example. 
 
 <p float="left">
 <img src="../files/tb_mr_coupling.gif" width="800" />
