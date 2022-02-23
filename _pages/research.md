@@ -21,12 +21,46 @@ develop stable time stepping schemes for coupling multiphysics systems, e.g., at
 
 # Research Highlights
 
+- [Multirate Partitioned Runge-Kutta Methods for Coupled Navier--Stokes Equations](#multirate-coupling-methods)
 - [Entropy-Conserving/Stable Partitioned Runge-Kutta Methods](#entropy-stable-imex-and-multirate-methods)
 - [Mass-Conserving IMEX Coupling](#mass-conserving-imex-coupling)
 - [Scalable Time Integrators](#exponential-dg)
 - [High-order Spatial Discretizations](#hybridized-dg-methods-for-a-linear-degenerate-elliptic-equations)
 - [Geophysical Flows](#a-coupled-implicit-hdg-and-explicit-dg-methods-for-shallow-water-systems)
 - [Remote Sensing](#temperature-and-moisture-retrievals-from-hyperspectral-measurements)
+
+## Multirate Coupling Methods
+ 
+we propose to apply multirate partitioned Runge-Kutta (MPRK) coupling methods \cite{constantinescu2007multirate} for fluid-fluid interaction problems. 
+We propose using multirate partitioned Runge-Kutta (MPRK) coupling methods for fluid-fluid interaction problems. 
+A buffer region is employed at the interface to ensure a smooth transition, which is essential for conservation and convergence. 
+Our solution adds only a little amount of complexity to a singlerate implementation while providing the complete computational benefit of a multirate method. 
+We develop a theoretical performance model for both serial and parallel instances to measure computing performance systematically. 
+The usefulness of using multirate methods for solving coupled compressible Navier-Stokes equations (CNS) has been demonstrated through several numerical studies. 
+
+We perform the simulation with the MPRK2 ($m=4$) method.
+The evolution of temperature fields is shown for $t\in\LRs{0,2000}$. 
+The cold fluid parcel in the atmosphere drops down to the interface while the warm fluid in the ocean rises. The cold and warm perturbations horizontally move balancing heat and momentum fluxes across the interface, and hit the walls. 
+The cooled fluid on the ocean surface begins to sink and create circulations. 
+
+<p float="left">
+<img src="../files/tb_mr_coupling_2d.jpg" width="850" />
+</p>
+
+We also studied the parallel performance of the MPRK2 method using three-dimensional coupled compressible Navier-Stokes equations. 
+Thanks to its explicit nature, the MPRK2 coupling method shows favorable strong and weak scaling results for the thermal convection example. 
+ 
+<p float="left">
+<img src="../files/tb_scaling_strong_wc.jpg" width="400" />
+<img src="../files/tb_scaling_weak_wc.jpg" width="400" />
+</p>
+
+<p float="left">
+<img src="../files/tb_mr_coupling.mp4" alt="thermal convection" />
+</p>
+
+<!-- - [Multirate Partitioned Runge-Kutta Methods for Coupled Navier--Stokes Equations](https://arxiv.org/pdf/2108.08908.pdf) -->
+
 
 ## Entropy Stable IMEX and Multirate Methods
  

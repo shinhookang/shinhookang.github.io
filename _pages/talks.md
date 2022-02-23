@@ -18,9 +18,11 @@ author_profile: true
 nonlinear conservation laws: with application to Burger and Euler
 equations (Oct 2020, Modeling and Simulation of Transport Phenomena 2020). -->
 
+* Implicit-Explicit and Multirate methods for a Coupled Navier-Stokes Equations (2021 American Geophysical Union (AGU) fall meeting, December 14, 2021).
+
 * Mass-Conserving Implicit-Explicit Methods for Coupled Compressible Navier-Stokes Equations (the 16th U.S. National Congress on Computational Mechanics, July 2021). 
 
 * A Scalable exponential-DG approach for nonlinear conservation laws: with application to Burger and Euler equations (2021 International Conference on Spectral and High Order Methods, July 2021).
  
-* A Relaxed Multirate Integrator for Hyperbolic equations (2021 International Conference on Spectral and High Order Methods, July 2021).
+<!-- * A Relaxed Multirate Integrator for Hyperbolic equations (2021 International Conference on Spectral and High Order Methods, July 2021). -->
  
