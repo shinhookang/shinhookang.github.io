@@ -65,7 +65,7 @@ for the thermal convection example.
 <!-- ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif) -->
 </p>
 
-<!-- - [Multirate Partitioned Runge-Kutta Methods for Coupled Navier--Stokes Equations](https://arxiv.org/pdf/2108.08908.pdf) -->
+[Multirate Partitioned Runge-Kutta Methods for Coupled Navier--Stokes Equations](https://arxiv.org/pdf/2202.11890.pdf)
 
 
 ## Entropy Stable IMEX and Multirate Methods
