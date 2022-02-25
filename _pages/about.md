@@ -15,11 +15,13 @@ I focus on computational mechanics including high-order numerical methods, time 
 
 ## Recent news:
 
-* August 2021: [Entropy-Preserving and Entropy-Stable Relaxation IMEX and Multirate Time-Stepping Methods](https://arxiv.org/pdf/2108.08908.pdf) is submitted.
+* February 2022: [Multirate Partitioned Runge-Kutta Methods for Coupled Navier-Stokes Equations](https://arxiv.org/pdf/2108.08908.pdf) is submitted.
+* 
+<!-- * August 2021: [Entropy-Preserving and Entropy-Stable Relaxation IMEX and Multirate Time-Stepping Methods](https://arxiv.org/pdf/2108.08908.pdf) is submitted. -->
 
-* August 2021: [A scalable exponential-DG approach for nonlinear conservation laws: with application to Burger and Euler equations](https://doi.org/10.1016/j.cma.2021.114031) is published.
+<!-- * August 2021: [A scalable exponential-DG approach for nonlinear conservation laws: with application to Burger and Euler equations](https://doi.org/10.1016/j.cma.2021.114031) is published. -->
 
-* July 2021: [Mass-Conserving Implicit-Explicit Methods for Coupled Compressible Navier-Stokes Equations](https://doi.org/10.1016/j.cma.2021.113988) is published. 
+<!-- * July 2021: [Mass-Conserving Implicit-Explicit Methods for Coupled Compressible Navier-Stokes Equations](https://doi.org/10.1016/j.cma.2021.113988) is published.  -->
 
 
 
