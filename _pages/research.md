@@ -5,9 +5,8 @@ permalink: /research/
 author_profile: true
 ---
 
-My research is primarily concerned with computational mechanics with a focus on geophysical flows. 
-I am interested in developing stable and efficient numerical algorithms that are suitable for multi-physics and multiscale problems such as Earth System Models. To tackle such problems, high-ordermethods, operator splittings methods, coupling methods, scalable solvers are of interest. 
-Nowadays,I am also interested in designing next-generation machine-learning methods and algorithms thatare more stable and interpretable for geophysical flows.
+My research focuses on computational mechanics with an emphasis on fluid dynamics. To solve complex multiscale and multiphysics problems, scientific computing and high-performance computing are of interest. Nowadays, I also concentrate on enhancing computational fluid dynamics with machine learning.
+
 <!-- I enjoy working with engineers, computerscientists, mathematicians and others. Interacting with them allows me to see my problems fromdifferent perspectives, which inspire new ideas, overcome difficulties that arise in research, and improve the quality of my research work. -->
 
 <!-- My research primarily focuses on numerical methods for partial differential equations.
@@ -21,6 +20,7 @@ develop stable time stepping schemes for coupling multiphysics systems, e.g., at
 
 # Research Highlights
 
+- [Learning Subgrid-scale Models with Neural Ordinary Differential Equations](#learning-sgsmodel-node)
 - [Multirate Partitioned Runge-Kutta Methods for Coupled Navier--Stokes Equations](#multirate-coupling-methods)
 - [Entropy-Conserving/Stable Partitioned Runge-Kutta Methods](#entropy-stable-imex-and-multirate-methods)
 - [Mass-Conserving IMEX Coupling](#mass-conserving-imex-coupling)
@@ -28,6 +28,41 @@ develop stable time stepping schemes for coupling multiphysics systems, e.g., at
 - [High-order Spatial Discretizations](#hybridized-dg-methods-for-a-linear-degenerate-elliptic-equations)
 - [Geophysical Flows](#a-coupled-implicit-hdg-and-explicit-dg-methods-for-shallow-water-systems)
 - [Remote Sensing](#temperature-and-moisture-retrievals-from-hyperspectral-measurements)
+
+## Learning Subgrid-scale Models with Neural Ordinary Differential Equations
+ 
+In this study we leverage neural ordinary differential equations (NODEs) and simulation data with different scales to learn the dynamics of the source term at a continuous level. 
+Our approach inherits the benefits of NODEs and has the potential to be applicable to various parameterization problems. 
+The contributions of our work are summarized as follows:
+(1) we propose a novel approach to learn continuous source dynamics through neural ordinary differential equations; (2) we numerically demonstrate that the neural network source operator is capable of approximating coupling terms as well as reconstructing the subgrid-scale dynamics; and  
+(3) we generalize the discrete corrective forcing approach (Lara and Ferror, 2022) to a continuous corrective forcing approach that supports high-order accuracy in time, and we compare the two methods. 
+Indeed, the numerical examples confirm that our proposed approach is insensitive to changing the timestep size. In particular, the prediction with continuous corrective forcing term shows a convergent behavior to the filtered solution with decreasing  timestep size. We also numerically demonstrate that our proposed approach performs better than the discrete corrective forcing approach in terms of accuracy. 
+
+Hovm\"{o}ller diagram of the true model (top) and the trained model (middle) for the slow variables of two-scale Lorenz 96 system. The bottom panel shows the difference between the two simulations.
+<p float="left">
+<img src="../files/node_slowX_pred_history.jpg" width="850" />
+</p>
+
+
+We show the snapshot of $u^L$, $\hat{u}^L$, and $Gu^H$ at the final time ($t=1$). We note that the neural network source term helps maintain a less smooth (polygonal) waveform of the filtered solution, when compared with the first-order DG method without the source term.
+
+<p float="left">
+<img src="../files/node_cd_smallkappa_predss_21.jpg" width="850" />
+</p>
+
+The following figure shows the relative errors of $\hat{u}^L$ (red dot line) and $\tilde{u}^L$  (blue dash dot line)  against timestep sizes. In general the continuous corrective forcing approach demonstrates  better accuracy than the discrete corrective forcing approach. The error of $\hat{u}^L$ converges to a certain nonzero constant with decreasing $\dt^L$.
+The error of $\tilde{u}^L$, however, does not show any convergence; rather, it has the minimum relative error at $\dt^L=10^{-3}$ in which discrete corrective forcing was trained. 
+
+<p float="left">
+<img src="../files/node_cd_relerr_different_dt.gif" width="800" />
+</p>
+
+This is expected because the discrete corrective forcing approach learns a map from the low-order solution to the corrective forcing approximation with a specific timestep size and the first-order Euler method. Thus, predicting with different $\dt_L$ results in poor performance. 
+On the other hand, the neural ODE approach learns the corrective forcing operator at a continuous level. This leads to consistent results that do not degrade the simulation predictability by changing the timestep size
+
+
+- [Learning Subgrid-scale Models with Neural Ordinary Differential Equations](https://arxiv.org/pdf/2212.09967.pdf)
+
 
 ## Multirate Coupling Methods
  
@@ -65,7 +100,7 @@ for the thermal convection example.
 <!-- ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif) -->
 </p>
 
-[Multirate Partitioned Runge-Kutta Methods for Coupled Navier--Stokes Equations](https://arxiv.org/pdf/2202.11890.pdf)
+- [Multirate Partitioned Runge-Kutta Methods for Coupled Navier--Stokes Equations](https://arxiv.org/pdf/2202.11890.pdf)
 
 
 ## Entropy Stable IMEX and Multirate Methods
