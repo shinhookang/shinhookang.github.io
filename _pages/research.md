@@ -50,11 +50,11 @@ We show the snapshot of $u^L$, $\hat{u}^L$, and $Gu^H$ at the final time ($t=1$)
 <img src="../files/node_cd_smallkappa_predss_21.jpg" width="850" />
 </p>
 
-The following figure shows the relative errors of $\hat{u}^L$ (red dot line) and $\tilde{u}^L$  (blue dash dot line)  against timestep sizes. In general the continuous corrective forcing approach demonstrates  better accuracy than the discrete corrective forcing approach. The error of $\hat{u}^L$ converges to a certain nonzero constant with decreasing $\dt^L$.
-The error of $\tilde{u}^L$, however, does not show any convergence; rather, it has the minimum relative error at $\dt^L=10^{-3}$ in which discrete corrective forcing was trained. 
+The following figure shows the relative errors of $\hat{u}^L$ (red dot line) and $\tilde{u}^L$  (blue dash dot line)  against timestep sizes. In general the continuous corrective forcing approach demonstrates  better accuracy than the discrete corrective forcing approach. The error of $\hat{u}^L$ converges to a certain nonzero constant with decreasing $\triangle t^L$.
+The error of $\tilde{u}^L$, however, does not show any convergence; rather, it has the minimum relative error at $\triangle t^L=10^{-3}$ in which discrete corrective forcing was trained. 
 
 <p float="left">
-<img src="../files/node_cd_relerr_different_dt.gif" width="800" />
+<img src="../files/node_cd_relerr_different_dt.jpg" width="800" />
 </p>
 
 This is expected because the discrete corrective forcing approach learns a map from the low-order solution to the corrective forcing approximation with a specific timestep size and the first-order Euler method. Thus, predicting with different $\dt_L$ results in poor performance. 
