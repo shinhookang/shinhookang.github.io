@@ -17,7 +17,7 @@ I focus on computational mechanics including high-order numerical methods, time 
 
 * December 2022: [Learning Subgrid-scale Models with Neural Ordinary Differential Equations](https://arxiv.org/pdf/2212.09967.pdf) is submitted.
 
-* February 2022: [Multirate Partitioned Runge-Kutta Methods for Coupled Navier-Stokes Equations](https://arxiv.org/pdf/2108.08908.pdf) is submitted.
+<!-- * February 2022: [Multirate Partitioned Runge-Kutta Methods for Coupled Navier-Stokes Equations](https://arxiv.org/pdf/2108.08908.pdf) is submitted. -->
 <!-- * August 2021: [Entropy-Preserving and Entropy-Stable Relaxation IMEX and Multirate Time-Stepping Methods](https://arxiv.org/pdf/2108.08908.pdf) is submitted. -->
 
 <!-- * August 2021: [A scalable exponential-DG approach for nonlinear conservation laws: with application to Burger and Euler equations](https://doi.org/10.1016/j.cma.2021.114031) is published. -->
