@@ -57,7 +57,7 @@ The error of $\tilde{u}^L$, however, does not show any convergence; rather, it h
 <img src="../files/node_cd_relerr_different_dt.jpg" width="800" />
 </p>
 
-This is expected because the discrete corrective forcing approach learns a map from the low-order solution to the corrective forcing approximation with a specific timestep size and the first-order Euler method. Thus, predicting with different $\dt_L$ results in poor performance. 
+This is expected because the discrete corrective forcing approach learns a map from the low-order solution to the corrective forcing approximation with a specific timestep size and the first-order Euler method. Thus, predicting with different $\triangle t_L$ results in poor performance. 
 On the other hand, the neural ODE approach learns the corrective forcing operator at a continuous level. This leads to consistent results that do not degrade the simulation predictability by changing the timestep size
 
 
