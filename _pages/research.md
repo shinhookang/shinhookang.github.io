@@ -38,7 +38,7 @@ The contributions of our work are summarized as follows:
 (3) we generalize the discrete corrective forcing approach (Lara and Ferror, 2022) to a continuous corrective forcing approach that supports high-order accuracy in time, and we compare the two methods. 
 Indeed, the numerical examples confirm that our proposed approach is insensitive to changing the timestep size. In particular, the prediction with continuous corrective forcing term shows a convergent behavior to the filtered solution with decreasing  timestep size. We also numerically demonstrate that our proposed approach performs better than the discrete corrective forcing approach in terms of accuracy. 
 
-Hovm\"{o}ller diagram of the true model (top) and the trained model (middle) for the slow variables of two-scale Lorenz 96 system. The bottom panel shows the difference between the two simulations.
+Hovmöller diagram of the true model (top) and the trained model (middle) for the slow variables of two-scale Lorenz 96 system. The bottom panel shows the difference between the two simulations.
 <p float="left">
 <img src="../files/node_slowX_pred_history.jpg" width="850" />
 </p>
