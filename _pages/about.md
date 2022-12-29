@@ -15,6 +15,8 @@ I focus on computational mechanics including high-order numerical methods, time 
 
 ## Recent news:
 
+* December 2022: [Learning Subgrid-scale Models with Neural Ordinary Differential Equations](https://arxiv.org/pdf/2212.09967.pdf) is submitted.
+
 * February 2022: [Multirate Partitioned Runge-Kutta Methods for Coupled Navier-Stokes Equations](https://arxiv.org/pdf/2108.08908.pdf) is submitted.
 <!-- * August 2021: [Entropy-Preserving and Entropy-Stable Relaxation IMEX and Multirate Time-Stepping Methods](https://arxiv.org/pdf/2108.08908.pdf) is submitted. -->
 
