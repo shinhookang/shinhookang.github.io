@@ -5,7 +5,8 @@ permalink: /research/
 author_profile: true
 ---
 
-My research focuses on computational mechanics with an emphasis on fluid dynamics. To solve complex multiscale and multiphysics problems, scientific computing and high-performance computing are of interest. Nowadays, I also concentrate on enhancing computational fluid dynamics with machine learning.
+My research focuses on algorithms and numerical methods with an emphasis on fluid dynamics. To
+solve complex multiscale and multiphysics problems, I have explored high-order methods, operator splitting methods, and high-performance computing. Recently, I also have been concentrating on enhancing computational fluid dynamics methods with machine learning.
 
 <!-- I enjoy working with engineers, computerscientists, mathematicians and others. Interacting with them allows me to see my problems fromdifferent perspectives, which inspire new ideas, overcome difficulties that arise in research, and improve the quality of my research work. -->
 
