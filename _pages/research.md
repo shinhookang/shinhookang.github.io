@@ -30,14 +30,9 @@ develop stable time stepping schemes for coupling multiphysics systems, e.g., at
 - [Remote Sensing](#temperature-and-moisture-retrievals-from-hyperspectral-measurements)
 
 ## Learning Subgrid-scale Models with Neural Ordinary Differential Equations
- 
-In this study we leverage neural ordinary differential equations (NODEs) and simulation data with different scales to learn the dynamics of the source term at a continuous level. 
-Our approach inherits the benefits of NODEs and has the potential to be applicable to various parameterization problems. 
-The contributions of our work are summarized as follows:
-(1) we propose a novel approach to learn continuous source dynamics through neural ordinary differential equations; (2) we numerically demonstrate that the neural network source operator is capable of approximating coupling terms as well as reconstructing the subgrid-scale dynamics; and  
-(3) we generalize the discrete corrective forcing approach (Lara and Ferror, 2022) to a continuous corrective forcing approach that supports high-order accuracy in time, and we compare the two methods. 
-Indeed, the numerical examples confirm that our proposed approach is insensitive to changing the timestep size. In particular, the prediction with continuous corrective forcing term shows a convergent behavior to the filtered solution with decreasing  timestep size. We also numerically demonstrate that our proposed approach performs better than the discrete corrective forcing approach in terms of accuracy. 
 
+We propose a new approach to learning the subgrid-scale model when simulating partial differential equations (PDEs) solved by the method of lines and their representation in chaotic ordinary differential equations, based on neural ordinary differential equations (NODEs). Solving systems with fine temporal and spatial grid scales is an ongoing computational challenge, and closure models are generally difficult to tune. Machine learning approaches have increased the accuracy and efficiency of computational fluid dynamics solvers. In this approach neural networks are used to learn the coarse- to fine-grid map, which can be viewed as subgrid-scale parameterization. We propose a strategy that uses the NODE and partial knowledge to learn the source dynamics at a continuous level. Our method inherits the advantages of NODEs and can be used to parameterize subgrid scales, approximate coupling operators, and improve the efficiency of low-order solvers. Numerical results with the two-scale Lorenz 96 ODE, the convection–diffusion PDE, and the viscous Burgers’ PDE are used to illustrate this approach.
+  
 Hovmöller diagram of the true model (top) and the trained model (middle) for the slow variables of two-scale Lorenz 96 system. The bottom panel shows the difference between the two simulations.
 <p float="left">
 <img src="../files/node_slowX_pred_history.jpg" width="850" />
@@ -47,21 +42,21 @@ Hovmöller diagram of the true model (top) and the trained model (middle) for th
 We show the snapshot of $u^L$, $\hat{u}^L$, and $Gu^H$ at the final time ($t=1$). We note that the neural network source term helps maintain a less smooth (polygonal) waveform of the filtered solution, when compared with the first-order DG method without the source term.
 
 <p float="left">
-<img src="../files/node_cd_smallkappa_predss_21.jpg" width="850" />
+<img src="../files/node-cd-smallkappa-predss-t10-new2.png" width="850" />
 </p>
 
 The following figure shows the relative errors of $\hat{u}^L$ (red dot line) and $\tilde{u}^L$  (blue dash dot line)  against timestep sizes. In general the continuous corrective forcing approach demonstrates  better accuracy than the discrete corrective forcing approach. The error of $\hat{u}^L$ converges to a certain nonzero constant with decreasing $\triangle t^L$.
 The error of $\tilde{u}^L$, however, does not show any convergence; rather, it has the minimum relative error at $\triangle t^L=10^{-3}$ in which discrete corrective forcing was trained. 
 
 <p float="left">
-<img src="../files/node_cd_relerr_different_dt.jpg" width="800" />
+<img src="../files/node-cd-relerr-different-dt-new2.jpg" width="800" />
 </p>
 
-This is expected because the discrete corrective forcing approach learns a map from the low-order solution to the corrective forcing approximation with a specific timestep size and the first-order Euler method. Thus, predicting with different $\triangle t_L$ results in poor performance. 
+This is expected because the discrete corrective forcing approach learns a map from the low-order solution to the corrective forcing approximation with a specific timestep size and the first-order Euler method. Thus, predicting with different $\triangle t_L$ degrades performance. 
 On the other hand, the neural ODE approach learns the corrective forcing operator at a continuous level. This leads to consistent results that do not degrade the simulation predictability by changing the timestep size
 
 
-- [Learning Subgrid-scale Models with Neural Ordinary Differential Equations](https://arxiv.org/pdf/2212.09967.pdf)
+- [Learning Subgrid-scale Models with Neural Ordinary Differential Equations](https://doi.org/10.1016/j.compfluid.2023.105919)
 
 
 ## Multirate Coupling Methods
