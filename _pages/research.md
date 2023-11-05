@@ -48,15 +48,15 @@ develop stable time stepping schemes for coupling multiphysics systems, e.g., at
 
 The growing computing power over the years has enabled simulations to become more complex and accurate. However, high-fidelity simulations, while immensely valuable for scientific discovery and problem solving, come with significant computational demands. As a result, it is common to run a low-fidelity model with a subgrid-scale model to reduce the computational cost, but selecting the appropriate subgrid-scale models and tuning them are challenging. We propose a novel method for learning the subgrid-scale model effects when simulating partial differential equations using neural ordinary differential equations in the context of discontinuous Galerkin (DG) spatial discretization. Our approach learns the missing scales of the low-order DG solver at a continuous level and hence improves the accuracy of the low-order DG approximations as well as accelerates the filtered high-order DG simulations with a certain degree of precision. We demonstrate the performance of our approach through multidimensional Taylor--Green vortex examples at different Reynolds numbers and times, which cover laminar, transitional, and turbulent regimes. The proposed method not only reconstructs the subgrid-scale from the low-order (1st-order) approximation but also speeds up the filtered high-order DG (6th-order) simulation by two orders of magnitude.
 
-We develop a differentiable DG solver on a structured mesh for compressible Navier–Stokes equations.
+We developed a differentiable DG solver on a structured mesh for compressible Navier–Stokes equations.
 Taylor-Green vortex example is shown in Figure at $Re=1600$. 
 <p float="left">
 <img src="../files/cns3d_re1600.gif" width="800" />
 </p>
 
 
-Neural network augmented solution reconstruct the missing scales from the low-order solution.
-We see the remarkable improvements in the snapshots at $t=8$.
+We see the remarkable improvements in the snapshots at $t=8$. 
+The augmented solution successfully recovers the vortical structures, whereas the low-order solution quickly loses the vortices due to the numerical dissipation associated with the low-order solver in the viscous-dominated flows ($Re=100$).
 <p float="left">
 <img src="../files/cns3d_tgv_re100_t8.jpg" width="800" />
 </p>
