@@ -9,10 +9,10 @@ author_profile: true
 Scientific AI
 Coming years it is expected to blend the knowledge in computing field with various fields in the society, which will lead to substantial change across the nation.   -->
 
-My research primarily focuses on conventional scientific computing and how it can be applied to multiphysics and multiscale problems such as computational fluid dynamics and Earth system modeling. Interests include entropy stable methods, operator splitting methods, high-order methods, and high-performance computing. 
-Nowadays I turn my attention to scientific machine learning because of its significant impact on science and engineering. Scientific machine learning (SciML) combines traditional scientific computing and machine learning methods. This approach leverages the strengths of both domains and bridge the gap between them to provide a new and innovative perspective for solving complex problems in various scientific and engineering applications. 
+My research primarily focuses on conventional scientific computing and how it can be applied to multiphysics and multiscale problems such as computational fluid dynamics and Earth system modeling. My interests include entropy stable methods, operator splitting methods, high-order methods, and high-performance computing. 
+Nowadays I turn my attention to scientific machine learning because of its significant impact on science and engineering. Combining traditional scientific computing and machine learning methods, scientific machine learning (SciML) leverages the strengths of both fields and bridges the gap between them, providing new and innovative perspectives for solving complex problems in a variety of scientific and engineering applications.
 I think SciML can be a good complementary of traditional numerical models. 
-Along this line, I am actively working on developing surrogate models for geophysical flows. 
+Along this line, I am actively working on developing surrogate models for geophysical flows.
  
 
 <!-- My research interests concentrate on three key aspects: high-order methods, high-performance computing, and machine learning. High-order methods are advantageous for parallel performance since they not only offer accurate numerical solutions but also have a small communication stencil. High-performance computing is essential for simulating large-scale phenomena.
