@@ -5,8 +5,21 @@ permalink: /research/
 author_profile: true
 ---
 
-My research focuses on algorithms and numerical methods with an emphasis on fluid dynamics. To
-solve complex multiscale and multiphysics problems, I have explored high-order methods, operator splitting methods, and high-performance computing. Recently, I also have been concentrating on enhancing computational fluid dynamics methods with machine learning.
+<!-- Over the past years, artificial intelligence (AI) have delivered dramatic impact on science and engineering.
+Scientific AI
+Coming years it is expected to blend the knowledge in computing field with various fields in the society, which will lead to substantial change across the nation.   -->
+
+My research primarily focuses on conventional scientific computing and how it can be applied to multiphysics and multiscale problems such as computational fluid dynamics and Earth system modeling. Interests include entropy stable methods, operator splitting methods, high-order methods, and high-performance computing. 
+Nowadays I turn my attention to scientific machine learning because of its significant impact on science and engineering. Scientific machine learning (SciML) combines traditional scientific computing and machine learning methods. This approach leverages the strengths of both domains and bridge the gap between them to provide a new and innovative perspective for solving complex problems in various scientific and engineering applications. 
+I think SciML can be a good complementary of traditional numerical models. 
+Along this line, I am actively working on developing surrogate models for geophysical flows. 
+ 
+
+<!-- My research interests concentrate on three key aspects: high-order methods, high-performance computing, and machine learning. High-order methods are advantageous for parallel performance since they not only offer accurate numerical solutions but also have a small communication stencil. High-performance computing is essential for simulating large-scale phenomena.
+
+
+AI is predicted to grow increasingly pervasive as technology develops, revolutionising sectors including healthcare, banking, and transportation. -->
+
 
 <!-- I enjoy working with engineers, computerscientists, mathematicians and others. Interacting with them allows me to see my problems fromdifferent perspectives, which inspire new ideas, overcome difficulties that arise in research, and improve the quality of my research work. -->
 
@@ -21,6 +34,7 @@ develop stable time stepping schemes for coupling multiphysics systems, e.g., at
 
 # Research Highlights
 
+- [Learning Subgrid-Scale Models in Discontinuous Galerkin Methods with Neural Ordinary Differential Equations for Compressible Navier--Stokes Equations](#learning-sgs-models-in-dg-with-node)
 - [Learning Subgrid-scale Models with Neural Ordinary Differential Equations](#learning-sgsmodel-node)
 - [Multirate Partitioned Runge-Kutta Methods for Coupled Navier--Stokes Equations](#multirate-coupling-methods)
 - [Entropy-Conserving/Stable Partitioned Runge-Kutta Methods](#entropy-stable-imex-and-multirate-methods)
@@ -29,6 +43,28 @@ develop stable time stepping schemes for coupling multiphysics systems, e.g., at
 - [High-order Spatial Discretizations](#hybridized-dg-methods-for-a-linear-degenerate-elliptic-equations)
 - [Geophysical Flows](#a-coupled-implicit-hdg-and-explicit-dg-methods-for-shallow-water-systems)
 - [Remote Sensing](#temperature-and-moisture-retrievals-from-hyperspectral-measurements)
+
+## Learning SGS Models in DG with NODE
+
+The growing computing power over the years has enabled simulations to become more complex and accurate. However, high-fidelity simulations, while immensely valuable for scientific discovery and problem solving, come with significant computational demands. As a result, it is common to run a low-fidelity model with a subgrid-scale model to reduce the computational cost, but selecting the appropriate subgrid-scale models and tuning them are challenging. We propose a novel method for learning the subgrid-scale model effects when simulating partial differential equations using neural ordinary differential equations in the context of discontinuous Galerkin (DG) spatial discretization. Our approach learns the missing scales of the low-order DG solver at a continuous level and hence improves the accuracy of the low-order DG approximations as well as accelerates the filtered high-order DG simulations with a certain degree of precision. We demonstrate the performance of our approach through multidimensional Taylor--Green vortex examples at different Reynolds numbers and times, which cover laminar, transitional, and turbulent regimes. The proposed method not only reconstructs the subgrid-scale from the low-order (1st-order) approximation but also speeds up the filtered high-order DG (6th-order) simulation by two orders of magnitude.
+
+We develop a differentiable DG solver on a structured mesh for compressible Navier–Stokes equations.
+Taylor-Green vortex example is shown in Figure at $Re=1600$. 
+<p float="left">
+<img src="../files/cns3d_re1600.gif" width="800" />
+</p>
+
+
+Neural network augmented solution reconstruct the missing scales from the low-order solution.
+We see the remarkable improvements in the snapshots at $t=8$.
+<p float="left">
+<img src="../files/cns3d_tgv_re100_t8.jpg" width="800" />
+</p>
+
+
+- [Learning Subgrid-Scale Models in Discontinuous Galerkin Methods with Neural Ordinary Differential Equations for Compressible Navier--Stokes Equations](https://doi.org/10.48550/arXiv.2310.18897)
+
+
 
 ## Learning Subgrid-scale Models with Neural Ordinary Differential Equations
 
@@ -96,7 +132,7 @@ for the thermal convection example.
 <!-- ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif) -->
 </p>
 
-- [Multirate Partitioned Runge-Kutta Methods for Coupled Navier--Stokes Equations](https://arxiv.org/pdf/2202.11890.pdf)
+- [Multirate Partitioned Runge-Kutta Methods for Coupled Navier--Stokes Equations](https://doi.org/10.1016/j.compfluid.2023.105964)
 
 
 ## Entropy Stable IMEX and Multirate Methods
