@@ -14,8 +14,8 @@ redirect_from:
 Specialist in Computational Mathematics (2023.8-Present), Mathematics and Computer Science Division at Argonne National Laboratory
 
 I received my 
-BS in Computer Science and Electrical Engineering, and MS in Spatial Design and Engineering from Handong Global University in 2007 and 2009, respectively. 
-Then, I obtained PhD in Engineering Mechanics from University of Texas at Austin in 2019.
+B.Eng. in Computer Science and Electrical Engineering, and M.Eng. in Spatial Design and Engineering from Handong Global University in 2007 and 2009, respectively. 
+Then, I obtained Ph.D. in Engineering Mechanics from University of Texas at Austin in 2019.
 Since then, I have been working at Argonne National Laboratory.
 Details can be found in my [CV](../files/cv_shinhoo.pdf).
 
