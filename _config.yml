@@ -83,8 +83,7 @@ analytics:
 author:
   name             : "Shinhoo Kang"
   avatar           : "KangShinhooWeb.jpg"
-  # bio              : "Researcher at <a href=https://www.anl.gov/mcs> Argonne National Laboratory </a>"
-  bio              : Assistant Professor of Computer Convergence Software at <a href=https://software.korea.ac.kr> Korea University Sejong Campus </a>"
+  bio              : "Assistant Professor of Computer Convergence Software at <a href=https://software.korea.ac.kr> Korea University Sejong Campus </a>"
   location         : "2511 Sejong-ro,<br>&emsp;&nbsp;&nbsp; Sejong-si 30019, KR"
   employer         :
   googlescholar    : "https://scholar.google.com/citations?user=I9YeTewAAAAJ&hl=ko&oi=sra"
