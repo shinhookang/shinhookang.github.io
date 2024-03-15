@@ -18,7 +18,7 @@ redirect_from:
 
 I obtained my Bachelor of Engineering in Computer Science and Electrical Engineering, followed by a Master of Engineering in Spatial Design and Engineering from Handong Global University, in 2007 and 2009 respectively. Then, I pursued and completed my Ph.D. in Engineering Mechanics at the University of Texas at Austin in 2019. 
 After that, I dedicated about four years to working at Argonne National Laboratory.
-In 2024, I started a new position as an Assistant Professor in the Department of Computer Convergence Software at Korea University Sejong Campus.
+In 2024, I started a new position as an assistant professor in the Department of Computer Convergence Software at Korea University Sejong Campus.
 Details can be found in my [CV](../files/cv_shinhoo.pdf).
 
 <!-- The ability of scientific computing to replicate nature has always interested me.
