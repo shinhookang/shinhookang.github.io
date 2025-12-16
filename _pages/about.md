@@ -34,11 +34,11 @@ diffusion equation, three-dimensional Navier--Stokes equations, and chaotic syst
 
 ## Recent news:
 
-* Feb. 2024: [Learning Subgrid-scale Models in Discontinuous Galerkin methods with Neural Ordinary Differential Equations](https://doi.org/10.48550/arXiv.2310.18897) is under review.
+* Sep. 2025: [Differentiable DG with Neural Operator Source Term Correction](https://doi.org/10.48550/arXiv.2310.18897) is under review.
 
-* Oct. 2023: [Multirate Partitioned Runge-Kutta Methods for Coupled Navier-Stokes Equations](https://doi.org/10.1016/j.compfluid.2023.105964) was published.
+<!-- * Oct. 2023: [Multirate Partitioned Runge-Kutta Methods for Coupled Navier-Stokes Equations](https://doi.org/10.1016/j.compfluid.2023.105964) was published. -->
 
-* Jun. 2023: [Learning Subgrid-scale Models with Neural Ordinary Differential Equations](https://doi.org/10.1016/j.compfluid.2023.105919) was published.
+<!-- * Jun. 2023: [Learning Subgrid-scale Models with Neural Ordinary Differential Equations](https://doi.org/10.1016/j.compfluid.2023.105919) was published. -->
 
 <!-- * February 2022: [Multirate Partitioned Runge-Kutta Methods for Coupled Navier-Stokes Equations](https://arxiv.org/pdf/2108.08908.pdf) is submitted. -->
 <!-- * August 2021: [Entropy-Preserving and Entropy-Stable Relaxation IMEX and Multirate Time-Stepping Methods](https://arxiv.org/pdf/2108.08908.pdf) is submitted. -->

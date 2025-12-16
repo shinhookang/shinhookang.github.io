@@ -10,14 +10,19 @@ author_profile: true
 <!-- * SIAM CSE 2021 -->
 <!-- * Learning subgrid-scale models with neural ordinary differential equations ( -->
 <!-- International Conference on Spectral and High Order Methods, Seoul, Korea, Aug. 14-18, 2023) -->
- 
+* Differentiable DG approach for Compressible Navier Stokes Equations, Seoul, Korea,  Apr. 28, 2026)
+
 ## Recent talks
 
 <!-- Below are recent talks, with select accompanying slides or video. A complete list of talks can be found on my [CV](../files/jcv.pdf). -->
 
-* Learning Subgrid-scale Models in Discontinuous Galerkin methods with Neural Ordinary Differential Equations (2nd IACM Mechanistic Machine Learning and Digital Engineering for Computational Science Engineering and Technology, El Paso, Texas,  Sep. 25, 2023)
+* Differentiable Discontinuous Galerkin Methods using Neural Ordinary Differential Equations based on Source Term Correction (Korean Meteorological Society, Fall Annual Meeting, Changwon, Korea, Nov. 5, 2025)
 
-* Learning Subgrid-scale Models in Discontinuous Galerkin methods with Neural Ordinary Differential Equations (International Conference on Spectral and High Order Methods, Seoul, Korea, Aug. 14-18, 2023)
+* Differentiable DG approach for Compressible Navier Stokes Equations (SciML Workshop, Austin, Texas,  Sep. 25, 2025)
+
+<!-- * Learning Subgrid-scale Models in Discontinuous Galerkin methods with Neural Ordinary Differential Equations (2nd IACM Mechanistic Machine Learning and Digital Engineering for Computational Science Engineering and Technology, El Paso, Texas,  Sep. 25, 2023) -->
+
+<!-- * Learning Subgrid-scale Models in Discontinuous Galerkin methods with Neural Ordinary Differential Equations (International Conference on Spectral and High Order Methods, Seoul, Korea, Aug. 14-18, 2023) -->
 
 
 <!-- Entropy stable schemes for nonlinear conservation laws: high order discontinuous Galerkin methods and reduced order modeling (Dec 2020, LLNL Data-drive physical simulation seminar). [Slides](../files/esdg_llnl_2020.pdf) -->
